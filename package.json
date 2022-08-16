@@ -1,0 +1,74 @@
+{
+  "name": "halalswap-sdk",
+  "license": "MIT",
+  "version": "3.0.9",
+  "description": "🛠 An SDK for building applications on top of Halalswap.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": "https://github.com/sameepsi/quickswap-sdk.git",
+  "keywords": [
+    "halalswap",
+    "matic",
+    "ethereum"
+  ],
+  "module": "dist/sdk.esm.js",
+  "scripts": {
+    "lint": "tsdx lint src test",
+    "build": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test",
+    "prepublishOnly": "tsdx build"
+  },
+  "dependencies": {
+    "@uniswap/v2-core": "^1.0.0",
+    "big.js": "^5.2.2",
+    "decimal.js-light": "^2.5.0",
+    "jsbi": "^3.1.1",
+    "tiny-invariant": "^1.1.0",
+    "tiny-warning": "^1.0.3",
+    "toformat": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@ethersproject/address": "^5.0.0-beta",
+    "@ethersproject/contracts": "^5.0.0-beta",
+    "@ethersproject/networks": "^5.0.0-beta",
+    "@ethersproject/providers": "^5.0.0-beta",
+    "@ethersproject/solidity": "^5.0.0-beta"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-transform-flow-strip-types": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-flow": "^7.18.10",
+    "@babel/preset-react": "^7.18.10",
+    "@ethersproject/address": "^5.0.2",
+    "@ethersproject/contracts": "^5.0.2",
+    "@ethersproject/networks": "^5.0.2",
+    "@ethersproject/providers": "^5.0.5",
+    "@ethersproject/solidity": "^5.0.2",
+    "@rollup/plugin-replace": "^4.0.0",
+    "@types/big.js": "^4.0.5",
+    "@types/jest": "^24.0.25",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-jsbi-to-bigint": "^1.3.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "tsdx": "^0.12.3",
+    "webpack": "^4.46.0"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true
+  }
+}
